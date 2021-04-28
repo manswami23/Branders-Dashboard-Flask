@@ -31,8 +31,10 @@
                 <div class="col">
                     <div class="leftside">
                         <h1>Create Post</h1>
+						{% if error %}
+							<p class=error style="color:red;"><strong>Error:</strong> {{ error }}
+						{% endif %}
                         <form action="" method="POST">
-                        <!-- <form action=""> -->
                         <label for="caption"></label>
                         <textarea id="caption" name="caption" placeholder="Enter caption here..." rows="5" cols="50"></textarea>
                         <br><br>

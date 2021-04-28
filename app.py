@@ -20,14 +20,18 @@ def analytics():
 
 @app.route('/news-media.html', methods=['GET', 'POST'])
 def nm():
-
+    error = None
     if request.method == "POST":
         if len(request.form['caption']) > 0 and len (request.form) > 1:
             caption = request.form['caption']
             if request.form.get('Twitter', "") == 'on' and request.form.get('Facebook', "") == 'on':
                 print("both")
             elif request.form.get('Twitter', "") == 'on':
-                twitterApi.update_status(caption)
+                try:
+                    twitterApi.update_status(caption)
+                except tweepy.TweepError as e:
+                    print(e.reason)
+                    error = 'Unable to post Twitter Status'
             elif request.form.get('Facebook', "") == 'on':
                 print("fb")
             else:
@@ -36,7 +40,7 @@ def nm():
             
             print(request.form)  
 
-    return render_template("news-media.html")
+    return render_template("news-media.html", error=error)
 
 if __name__ == '__main__':
     app.run('localhost', 5000)
