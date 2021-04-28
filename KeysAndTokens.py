@@ -16,7 +16,7 @@ appid = "464751431478339"
 appsecret = "76e030f6adcb0ee13ed66301ac97a015"
 
 
-### get long lived user access token (60 days)
+### get long lived user access token (60 days), set fb_exchange_token to short lived user access token, which someone will have to generate on Facebook App Graph API Explorer Dashboard
 curl -i -X GET "https://graph.facebook.com/oauth/access_token?grant_type=fb_exchange_token&client_id=464751431478339&client_secret=76e030f6adcb0ee13ed66301ac97a015&fb_exchange_token=EAAGmsFZC7bEMBAJL6fnmEEGzeRktTr9aYvG9ZBNyTur5Jl4l9BXQTpaBZBrjJFJYymhKGBL67ahtEiwvpkTzKVddSEcU8Qidu9yX0TIcvL7YGUA9y41xCRWZBVlLuTKn2H8cGTzzb00daQNxuY2SkS2OtIZBAoyqbZAvRFhuqnbgFjHhWw7YDEHQqN2tpIdCWd2FmOdkZCeuAZDZD"
 
 ### result:
