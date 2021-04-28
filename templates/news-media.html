@@ -31,8 +31,11 @@
                 <div class="col">
                     <div class="leftside">
                         <h1>Create Post</h1>
-						{% if error %}
-							<p class=error style="color:red;"><strong>Error:</strong> {{ error }}
+						{% if errorTwitter %}
+							<p class=error style="color:red;"><strong>Error:</strong> {{ errorTwitter }}
+						{% endif %}
+						{% if errorFacebook %}
+							<p class=error style="color:red;"><strong>Error:</strong> {{ errorFacebook }}
 						{% endif %}
                         <form action="" method="POST">
                         <label for="caption"></label>
