@@ -1,30 +1,12 @@
 #Twitter
-API_KEY = "ag328lN0NHYwhNdpCFxS4dBY0"
-API_KEY_SECRET = "VHAlMJSKBqBZ39i7EA5LH7Pu3OMOyJpjJTrPNDYu9BicnvpH8C"
-ACCESS_TOKEN = "1163964235539472387-drgd9ZXlapTrFgzZJBsx7t7ZSScZmU"
-ACCESS_TOKEN_SECRET = "4Jm8W26dBCWUzz2SYiph6KJw90YCF87xFeWUOctTJWGv9"
+API_KEY = ""
+API_KEY_SECRET = ""
+ACCESS_TOKEN = ""
+ACCESS_TOKEN_SECRET = ""
 
 
 ### Facebook
-FACEBOOK_PAGE_ID = "102087935371355"
-FACEBOOK_PAGE_ACCESS_TOKEN = "EAAGmsFZC7bEMBADRGGPm12PMKWLimnQMZAAFEeB4lTUseLrYbccn8kQJOfLfaJGC46vduZBN8sVvUo84yHSIsfc78PtJIm95JkMhEu7FK8PZBZBRSxgXNyZAKbE3G1Xta8lOYYIH0llNs9jey3UijRgWZCFuAZCiglAeQr542AiYsQZDZD"
-FACEBOOK_USER_ACCESS_TOKEN_SHORT = "EAAGmsFZC7bEMBAJL6fnmEEGzeRktTr9aYvG9ZBNyTur5Jl4l9BXQTpaBZBrjJFJYymhKGBL67ahtEiwvpkTzKVddSEcU8Qidu9yX0TIcvL7YGUA9y41xCRWZBVlLuTKn2H8cGTzzb00daQNxuY2SkS2OtIZBAoyqbZAvRFhuqnbgFjHhWw7YDEHQqN2tpIdCWd2FmOdkZCeuAZDZD"
+FACEBOOK_PAGE_ID = ""
+FACEBOOK_PAGE_ACCESS_TOKEN = ""
+FACEBOOK_USER_ACCESS_TOKEN_SHORT = ""
 
-
-"""
-appid = "464751431478339"
-appsecret = "76e030f6adcb0ee13ed66301ac97a015"
-
-
-### get long lived user access token (60 days), set fb_exchange_token to short lived user access token, which someone will have to generate on Facebook App Graph API Explorer Dashboard
-curl -i -X GET "https://graph.facebook.com/oauth/access_token?grant_type=fb_exchange_token&client_id=464751431478339&client_secret=76e030f6adcb0ee13ed66301ac97a015&fb_exchange_token=EAAGmsFZC7bEMBAJL6fnmEEGzeRktTr9aYvG9ZBNyTur5Jl4l9BXQTpaBZBrjJFJYymhKGBL67ahtEiwvpkTzKVddSEcU8Qidu9yX0TIcvL7YGUA9y41xCRWZBVlLuTKn2H8cGTzzb00daQNxuY2SkS2OtIZBAoyqbZAvRFhuqnbgFjHhWw7YDEHQqN2tpIdCWd2FmOdkZCeuAZDZD"
-
-### result:
-{"access_token":"EAAGmsFZC7bEMBAJ0R1oCxo3ETzWlhfOMOnZBPDx2ayOw9b0tjSgnhOTpJRcGDskhQWPEPZBhdviOLZACnWos9lgEVQrixzvyHg6yeMoPeW4xdFtPsk5ZC9ZBZA50j2WCmOwIA66gtdPSGks6ZBtTh0c3Hyn5czdwYVDiRKm7ZBEUItQZDZD","token_type":"bearer","expires_in":5183999}
-
-### use long lived user access token to get page access token
-curl -i -X GET "https://graph.facebook.com/102087935371355?fields=access_token&access_token=EAAGmsFZC7bEMBAJ0R1oCxo3ETzWlhfOMOnZBPDx2ayOw9b0tjSgnhOTpJRcGDskhQWPEPZBhdviOLZACnWos9lgEVQrixzvyHg6yeMoPeW4xdFtPsk5ZC9ZBZA50j2WCmOwIA66gtdPSGks6ZBtTh0c3Hyn5czdwYVDiRKm7ZBEUItQZDZD"
-
-### result:
-{"access_token":"EAAGmsFZC7bEMBADRGGPm12PMKWLimnQMZAAFEeB4lTUseLrYbccn8kQJOfLfaJGC46vduZBN8sVvUo84yHSIsfc78PtJIm95JkMhEu7FK8PZBZBRSxgXNyZAKbE3G1Xta8lOYYIH0llNs9jey3UijRgWZCFuAZCiglAeQr542AiYsQZDZD","id":"102087935371355"}
-"""
